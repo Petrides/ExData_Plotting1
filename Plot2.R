@@ -16,5 +16,6 @@ minutes<-strptime(datetime,format="%d/%m/%Y %H:%M:%S")
 png(file="Plot2.png")
 plot(minutes,as.numeric(as.character(tab$Global_active_power)),
      type="l",
+     xlab="",
      ylab="Global Active Power (kilowatts)")
 dev.off()
